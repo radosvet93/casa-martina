@@ -1,15 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
-import Section from "../components/Section.astro";
 import { PHONE } from "../constants/index.astro";
+import { Icon } from "astro-icon/components";
 ---
 
 <Layout title="Your holiday home in Tuscany - Casa Martina">
   <main>
     <Hero />
-    <Section>
-      <div class="grid grid-cols-2 gap-4">
+    <section
+      class="mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:items-center lg:px-24"
+    >
+      <div class="grid grid-cols-2 gap-28 max-md:grid-cols-1">
         <div class="">
           <h2 class="text-4xl pb-4">Modern 3 bed apartment</h2>
 
@@ -26,24 +28,14 @@ import { PHONE } from "../constants/index.astro";
             Martina.
           </p>
 
-          <p>Reservation:</p>
-          <p class="flex">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
-              ></path>
-            </svg>
-            {PHONE}
-          </p>
+          <div class="flex items-center">
+            <Icon name="mdi:phone" class="text-4xl mr-4" />
+            <div class="flex flex-col">
+              <span>Reservation:</span>
+
+              <span class="text-xl">{PHONE}</span>
+            </div>
+          </div>
         </div>
 
         <div class="grid grid-cols-2 md:grid-cols-2 gap-4">
@@ -67,6 +59,522 @@ import { PHONE } from "../constants/index.astro";
           </div>
         </div>
       </div>
-    </Section>
+    </section>
+
+    <section
+      class="mx-auto px-4 py-60 sm:px-6 lg:flex lg:items-center lg:px-24 bg-gray-200"
+    >
+      <div class="">
+        <div class="xl:container m-auto px-6 text-gray-500 md:px-12">
+          <div>
+            <h2
+              class="mt-4 text-2xl font-bold text-gray-700 dark:text-white md:text-4xl"
+            >
+              What Casa Martina is offering
+            </h2>
+          </div>
+          <div
+            class="mt-16 grid divide-x divide-y divide-gray-100 dark:divide-gray-700 overflow-hidden rounded-3xl border border-gray-100 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4"
+          >
+            <div
+              class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10"
+            >
+              <div class="relative space-y-8 py-12 p-8">
+                <Icon name="mdi:house" class="text-5xl" />
+
+                <div class="space-y-2">
+                  <h5
+                    class="text-xl font-medium text-gray-700 dark:text-white transition group-hover:text-primary"
+                  >
+                    First feature
+                  </h5>
+                  <p class="text-sm text-gray-600 dark:text-gray-300">
+                    Neque Dolor, fugiat non cum doloribus aperiam voluptates
+                    nostrum.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10"
+            >
+              <div class="relative space-y-8 py-12 p-8">
+                <Icon name="mdi:house" class="text-5xl" />
+                <div class="space-y-2">
+                  <h5
+                    class="text-xl font-medium text-gray-700 dark:text-white transition group-hover:text-primary"
+                  >
+                    Second feature
+                  </h5>
+                  <p class="text-sm text-gray-600 dark:text-gray-300">
+                    Neque Dolor, fugiat non cum doloribus aperiam voluptates
+                    nostrum.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10"
+            >
+              <div class="relative space-y-8 py-12 p-8">
+                <Icon name="mdi:house" class="text-5xl" />
+                <div class="space-y-2">
+                  <h5
+                    class="text-xl font-medium text-gray-700 dark:text-white transition group-hover:text-primary"
+                  >
+                    Third feature
+                  </h5>
+                  <p class="text-sm text-gray-600 dark:text-gray-300">
+                    Neque Dolor, fugiat non cum doloribus aperiam voluptates
+                    nostrum.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10"
+            >
+              <div
+                class="relative space-y-8 py-12 p-8 transition duration-300 group-hover:bg-white dark:group-hover:bg-gray-800"
+              >
+                <Icon name="mdi:house" class="text-5xl" />
+                <div class="space-y-2">
+                  <h5
+                    class="text-xl font-medium text-gray-700 dark:text-white transition group-hover:text-primary"
+                  >
+                    More features
+                  </h5>
+                  <p class="text-sm text-gray-600 dark:text-gray-300">
+                    Neque Dolor, fugiat non cum doloribus aperiam voluptates
+                    nostrum.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="mx-auto px-4 py-60 sm:px-6 lg:flex lg:items-center lg:px-24 bg-gray-900"
+    >
+      <div
+        class="xl:container m-auto px-6 text-gray-600 dark:text-gray-300 md:px-12 xl:px-6"
+      >
+        <h2
+          class="mb-12 text-center text-2xl font-bold text-gray-200 dark:text-white md:text-4xl"
+        >
+          What's our customers say
+        </h2>
+        <div class="grid gap-8 md:grid-rows-2 lg:grid-cols-2">
+          <div
+            class="row-span-2 rounded-3xl border border-gray-100 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 p-8 text-center shadow-2xl shadow-gray-600/10 dark:shadow-none"
+          >
+            <div class="flex h-full flex-col justify-center space-y-4">
+              <Icon name="mdi:person" class="text-5xl" />
+              <p class="md:text-xl">
+                <span class="font-serif">"</span> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quaerat repellat perspiciatis excepturi est. Non
+                ipsum iusto aliquam consequatur repellat provident, omnis ut, sapiente
+                voluptates veritatis cum deleniti repudiandae ad doloribus.
+                <span class="font-serif">"</span>
+              </p>
+              <div>
+                <h6 class="text-lg font-semibold leading-none">Jane Doe</h6>
+                <span class="text-xs text-gray-500">Product Designer</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="rounded-3xl sm:flex sm:space-x-8 border border-gray-100 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 p-8 text-center shadow-2xl shadow-gray-600/10 dark:shadow-none"
+          >
+            <Icon name="mdi:person" class="text-5xl" />
+
+            <div class="mt-4 space-y-4 text-center sm:mt-0 sm:text-left">
+              <p>
+                <span class="font-serif">"</span> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quaerat repellat perspiciatis excepturi est. Non
+                ipsum iusto aliquam consequatur repellat provident, omnis ut, sapiente
+                voluptates veritatis cum deleniti repudiandae ad doloribus.
+                <span class="font-serif">"</span>
+              </p>
+              <div>
+                <h6 class="text-lg font-semibold leading-none">Jane Doe</h6>
+                <span class="text-xs text-gray-500">Product Designer</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="rounded-3xl sm:flex sm:space-x-8 border border-gray-100 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 p-8 text-center shadow-2xl shadow-gray-600/10 dark:shadow-none"
+          >
+            <Icon name="mdi:person" class="text-5xl" />
+
+            <div class="mt-4 space-y-4 text-center sm:mt-0 sm:text-left">
+              <p>
+                <span class="font-serif">"</span> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quaerat repellat perspiciatis excepturi est. Non
+                ipsum iusto aliquam consequatur repellat provident, omnis ut, sapiente
+                voluptates veritatis cum deleniti repudiandae ad doloribus.
+                <span class="font-serif">"</span>
+              </p>
+              <div>
+                <h6 class="text-lg font-semibold leading-none">Jane Doe</h6>
+                <span class="text-xs text-gray-500">Product Designer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="mx-auto px-4 py-60 sm:px-6 lg:flex lg:items-center lg:px-24"
+    >
+      <!-- FAQ -->
+      <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+        <!-- Grid -->
+        <div class="grid md:grid-cols-5 gap-10">
+          <div class="md:col-span-2">
+            <div class="max-w-xs">
+              <h2
+                class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white"
+              >
+                Frequently<br />asked questions
+              </h2>
+              <p class="mt-1 hidden md:block text-gray-600 dark:text-gray-400">
+                Answers to the most frequently asked questions.
+              </p>
+            </div>
+          </div>
+          <!-- End Col -->
+
+          <div class="md:col-span-3">
+            <!-- Accordion -->
+            <div
+              class="hs-accordion-group divide-y divide-gray-200 dark:divide-gray-700"
+            >
+              <div
+                class="hs-accordion pb-3 active"
+                id="hs-basic-with-title-and-arrow-stretched-heading-one"
+              >
+                <button
+                  class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-one"
+                >
+                  Can I cancel at anytime?
+                  <svg
+                    class="hs-accordion-active:hidden block flex-shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg
+                  >
+                  <svg
+                    class="hs-accordion-active:block hidden flex-shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    ><path d="m18 15-6-6-6 6"></path></svg
+                  >
+                </button>
+                <div
+                  id="hs-basic-with-title-and-arrow-stretched-collapse-one"
+                  class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
+                  aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one"
+                >
+                  <p class="text-gray-600 dark:text-gray-400">
+                    Yes, you can cancel anytime no questions are asked while you
+                    cancel but we would highly appreciate if you will give us
+                    some feedback.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="hs-accordion pt-6 pb-3"
+                id="hs-basic-with-title-and-arrow-stretched-heading-two"
+              >
+                <button
+                  class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-two"
+                >
+                  My team has credits. How do we use them?
+                  <svg
+                    class="hs-accordion-active:hidden block flex-shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg
+                  >
+                  <svg
+                    class="hs-accordion-active:block hidden flex-shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    ><path d="m18 15-6-6-6 6"></path></svg
+                  >
+                </button>
+                <div
+                  id="hs-basic-with-title-and-arrow-stretched-collapse-two"
+                  class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                  aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-two"
+                >
+                  <p class="text-gray-600 dark:text-gray-400">
+                    Once your team signs up for a subscription plan. This is
+                    where we sit down, grab a cup of coffee and dial in the
+                    details.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="hs-accordion pt-6 pb-3"
+                id="hs-basic-with-title-and-arrow-stretched-heading-three"
+              >
+                <button
+                  class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-three"
+                >
+                  How does Preline's pricing work?
+                  <svg
+                    class="hs-accordion-active:hidden block flex-shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg
+                  >
+                  <svg
+                    class="hs-accordion-active:block hidden flex-shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    ><path d="m18 15-6-6-6 6"></path></svg
+                  >
+                </button>
+                <div
+                  id="hs-basic-with-title-and-arrow-stretched-collapse-three"
+                  class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                  aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-three"
+                >
+                  <p class="text-gray-600 dark:text-gray-400">
+                    Our subscriptions are tiered. Understanding the task at hand
+                    and ironing out the wrinkles is key.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="hs-accordion pt-6 pb-3"
+                id="hs-basic-with-title-and-arrow-stretched-heading-four"
+              >
+                <button
+                  class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-four"
+                >
+                  How secure is Preline?
+                  <svg
+                    class="hs-accordion-active:hidden block flex-shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg
+                  >
+                  <svg
+                    class="hs-accordion-active:block hidden flex-shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    ><path d="m18 15-6-6-6 6"></path></svg
+                  >
+                </button>
+                <div
+                  id="hs-basic-with-title-and-arrow-stretched-collapse-four"
+                  class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                  aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-four"
+                >
+                  <p class="text-gray-600 dark:text-gray-400">
+                    Protecting the data you trust to Preline is our first
+                    priority. This part is really crucial in keeping the project
+                    in line to completion.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="hs-accordion pt-6 pb-3"
+                id="hs-basic-with-title-and-arrow-stretched-heading-five"
+              >
+                <button
+                  class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-five"
+                >
+                  How do I get access to a theme I purchased?
+                  <svg
+                    class="hs-accordion-active:hidden block flex-shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg
+                  >
+                  <svg
+                    class="hs-accordion-active:block hidden flex-shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    ><path d="m18 15-6-6-6 6"></path></svg
+                  >
+                </button>
+                <div
+                  id="hs-basic-with-title-and-arrow-stretched-collapse-five"
+                  class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                  aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-five"
+                >
+                  <p class="text-gray-600 dark:text-gray-400">
+                    If you lose the link for a theme you purchased, don't panic!
+                    We've got you covered. You can login to your account, tap
+                    your avatar in the upper right corner, and tap Purchases. If
+                    you didn't create a login or can't remember the information,
+                    you can use our handy Redownload page, just remember to use
+                    the same email you originally made your purchases with.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="hs-accordion pt-6 pb-3"
+                id="hs-basic-with-title-and-arrow-stretched-heading-six"
+              >
+                <button
+                  class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-six"
+                >
+                  Upgrade License Type
+                  <svg
+                    class="hs-accordion-active:hidden block flex-shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg
+                  >
+                  <svg
+                    class="hs-accordion-active:block hidden flex-shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    ><path d="m18 15-6-6-6 6"></path></svg
+                  >
+                </button>
+                <div
+                  id="hs-basic-with-title-and-arrow-stretched-collapse-six"
+                  class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                  aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-six"
+                >
+                  <p class="text-gray-600 dark:text-gray-400">
+                    There may be times when you need to upgrade your license
+                    from the original type you purchased and we have a solution
+                    that ensures you can apply your original purchase cost to
+                    the new license purchase.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- End Accordion -->
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Grid -->
+      </div>
+      <!-- End FAQ -->
+    </section>
+
+    <section class="bg-gray-800 text-white">
+      <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+        <div class="mx-auto max-w-screen-sm text-center">
+          <h2
+            class="mb-4 text-4xl tracking-tight font-extrabold leading-tight"
+          >
+            Book your reservation now
+          </h2>
+          <p
+            class="mb-6 font-light md:text-lg"
+          >
+            Try Flowbite Platform for 30 days. No credit card required.
+          </p>
+          <a
+            href="#"
+            class="border bg-green-400 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+            >Book a reservation</a
+          >
+        </div>
+      </div>
+    </section>
   </main>
 </Layout>
