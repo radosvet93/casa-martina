@@ -4,7 +4,7 @@ import { PHONE } from "../constants/index.astro";
 ---
 
 <header class="px-24 py-4 max-sm:px-5 max-sm:py-10 max-w-7xl w-full mx-auto">
-  <nav class="bg-white border-gray-200 dark:bg-gray-900">
+  <nav class="bg-white border-gray-200">
     <div
       class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4"
     >
@@ -13,10 +13,7 @@ import { PHONE } from "../constants/index.astro";
           class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm"
         >
           <li>
-            <a
-              href="/gallery"
-              class="text-gray-900 dark:text-white hover:underline">GALLERY</a
-            >
+            <a href="/gallery" class="text-gray-900 hover:underline">GALLERY</a>
           </li>
         </ul>
       </div>
@@ -25,10 +22,7 @@ import { PHONE } from "../constants/index.astro";
       <div class="hidden sm:flex items-center">
         <ul class="flex flex-row font-medium mt-0 space-x-8 text-sm">
           <li>
-            <a
-              href="/contact"
-              class="text-gray-900 dark:text-white hover:underline">CONTACT</a
-            >
+            <a href="/contact" class="text-gray-900 hover:underline">CONTACT</a>
           </li>
         </ul>
       </div>
@@ -36,7 +30,7 @@ import { PHONE } from "../constants/index.astro";
       <div class="sm:hidden">
         <button
           type="button"
-          class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-gray-700 dark:text-white dark:hover:bg-white/10 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+          class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
           data-hs-collapse="#navbar-collapse-with-animation"
           aria-controls="navbar-collapse-with-animation"
           aria-label="Toggle navigation"
@@ -60,14 +54,11 @@ import { PHONE } from "../constants/index.astro";
           class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5"
         >
           <a
-            class="text-gray-900 dark:text-white hover:underline"
+            class="text-gray-900 hover:underline"
             href="/gallery"
             aria-current="page">GALLERY</a
           >
-          <a
-            class="text-gray-900 dark:text-white hover:underline"
-            href="/contact">CONTACT</a
-          >
+          <a class="text-gray-900 hover:underline" href="/contact">CONTACT</a>
           <a
             class="border px-3 py-2 rounded-full bg-green-600 text-white sm:inline-block"
             href={`tel:${PHONE}`}
