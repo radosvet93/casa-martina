@@ -9,8 +9,6 @@ const { title, description = "Casa martina tuscany", image } = Astro.props;
 
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-
-import { ViewTransitions } from "astro:transitions";
 ---
 
 <!doctype html>
@@ -23,12 +21,11 @@ import { ViewTransitions } from "astro:transitions";
     <meta name="generator" content={Astro.generator} />
     <meta name="og:image" content={image} />
     <title>{title}</title>
-    <ViewTransitions />
   </head>
   <body class="min-h-screen">
     <Header />
     <slot />
     <Footer />
-    <script is:inline src="./node_modules/preline/preline.js"></script>
+    <script is:inline src="/preline.js"></script>
   </body>
 </html>
