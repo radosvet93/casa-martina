@@ -8,6 +8,6 @@ export default defineConfig({
   build: {
     format: 'file'
   },
-  site: 'http://casamartinatuscany.com',
+  site: 'https://casamartinatuscany.com',
   integrations: [tailwind(), icon()]
 });

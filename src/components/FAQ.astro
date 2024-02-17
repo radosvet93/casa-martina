@@ -162,6 +162,33 @@ import { Icon } from "astro-icon/components";
               </p>
             </div>
           </div>
+
+          <!-- Qs6 -->
+          <div class="hs-accordion pt-6 pb-3">
+            <button
+              class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500"
+              aria-controls="checkin-policy"
+            >
+              Is there a free parking space?
+              <Icon
+                class="hs-accordion-active:hidden block flex-shrink-0 text-gray-600 group-hover:text-gray-500 text-2xl"
+                name="mdi:chevron-down"
+              />
+              <Icon
+                class="hs-accordion-active:block hidden flex-shrink-0 text-gray-600 group-hover:text-gray-500 text-2xl"
+                name="mdi:chevron-up"
+              />
+            </button>
+            <div
+              id="checkin-policy"
+              class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+              aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-two"
+            >
+              <p class="text-gray-600">
+                Yes, parking is a free parking and it's on the side of the building
+              </p>
+            </div>
+          </div>
         </div>
         <!-- End Accordion -->
       </div>
