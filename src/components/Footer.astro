@@ -1,6 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
-
+import { Image } from "astro:assets";
+import LOGO from "../images/Casa-Martina-Logo.png";
 const year = new Date().getFullYear();
 ---
 
@@ -11,7 +12,7 @@ const year = new Date().getFullYear();
         href="/"
         class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
       >
-        CASA MARTINA
+        <Image src={LOGO} alt="Casa Martina Logo" class="w-32" />
       </a>
       <div class="flex gap-4">
         <a

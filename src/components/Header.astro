@@ -1,12 +1,14 @@
 ---
 import { Icon } from "astro-icon/components";
 import { PHONE } from "../constants/index.astro";
+import LOGO from "../images/Casa-Martina-Logo.png";
+import { Image } from "astro:assets";
 ---
 
-<header class="px-24 py-4 max-sm:px-5 max-sm:py-10 max-w-7xl w-full mx-auto">
+<header class="px-24 max-sm:px-5 max-sm:py-10 max-w-7xl w-full mx-auto">
   <nav class="bg-white border-gray-200">
     <div
-      class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4"
+      class="flex flex-wrap justify-center items-center mx-auto max-w-screen-xl p-4"
     >
       <div class="hidden sm:flex items-center">
         <ul
@@ -17,7 +19,9 @@ import { PHONE } from "../constants/index.astro";
           </li>
         </ul>
       </div>
-      <a href="/" class="flex items-center space-x-3"> CASA MARTINA </a>
+      <a href="/" class="flex items-center">
+        <Image src={LOGO} alt="Casa Martina Logo" class="w-40 mx-10" />
+      </a>
 
       <div class="hidden sm:flex items-center">
         <ul class="flex flex-row font-medium mt-0 space-x-8 text-sm">
