@@ -1,0 +1,173 @@
+---
+import { PHONE } from "../constants/index.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<section class="mx-auto px-4 py-32 sm:px-6 lg:flex lg:items-center lg:px-24">
+  <!-- FAQ -->
+  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <!-- Grid -->
+    <div class="grid md:grid-cols-5 gap-10">
+      <div class="md:col-span-2">
+        <div class="max-w-xs">
+          <h2 class="text-2xl font-bold md:text-4xl md:leading-tight">
+            Frequently<br />asked questions
+          </h2>
+          <p class="mt-1 hidden md:block text-gray-600">
+            Answers to the most frequently asked questions.
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="md:col-span-3">
+        <!-- Accordion -->
+
+        <!-- Qs1 -->
+        <div class="hs-accordion-group divide-y divide-gray-200">
+          <div class="hs-accordion pb-3 active">
+            <button
+              class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500"
+              aria-controls="how-to-book"
+            >
+              How to book?
+              <Icon
+                class="hs-accordion-active:hidden block flex-shrink-0 text-gray-600 group-hover:text-gray-500 text-2xl"
+                name="mdi:chevron-down"
+              />
+              <Icon
+                class="hs-accordion-active:block hidden flex-shrink-0 text-gray-600 group-hover:text-gray-500 text-2xl"
+                name="mdi:chevron-up"
+              />
+            </button>
+            <div
+              id="how-to-book"
+              class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
+              aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one"
+            >
+              <p class="text-gray-600">
+                You just need to call us on {PHONE}, or send us an email <a
+                  href="mailto:casamartina19@yahoo.com"
+                  >casamartina19@yahoo.com</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <!-- Qs2 -->
+          <div class="hs-accordion pt-6 pb-3">
+            <button
+              class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500"
+              aria-controls="how-large-apartment"
+            >
+              How large is the apartment?
+              <Icon
+                class="hs-accordion-active:hidden block flex-shrink-0 text-gray-600 group-hover:text-gray-500 text-2xl"
+                name="mdi:chevron-down"
+              />
+              <Icon
+                class="hs-accordion-active:block hidden flex-shrink-0 text-gray-600 group-hover:text-gray-500 text-2xl"
+                name="mdi:chevron-up"
+              />
+            </button>
+            <div
+              id="how-large-apartment"
+              class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+              aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-two"
+            >
+              <p class="text-gray-600">
+                The whole apartments is 1485ft2 or 137m2
+              </p>
+            </div>
+          </div>
+
+          <!-- Qs3 -->
+          <div class="hs-accordion pt-6 pb-3">
+            <button
+              class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500"
+              aria-controls="how-many-to-stay-apartment"
+            >
+              How many people can stay in the apartment?
+              <Icon
+                class="hs-accordion-active:hidden block flex-shrink-0 text-gray-600 group-hover:text-gray-500 text-2xl"
+                name="mdi:chevron-down"
+              />
+              <Icon
+                class="hs-accordion-active:block hidden flex-shrink-0 text-gray-600 group-hover:text-gray-500 text-2xl"
+                name="mdi:chevron-up"
+              />
+            </button>
+            <div
+              id="how-many-to-stay-apartment"
+              class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+              aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-two"
+            >
+              <p class="text-gray-600">
+                The capacity of the apartment is 6 adults in total
+              </p>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="hs-accordion pt-6 pb-3">
+            <button
+              class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500"
+              aria-controls="checkin-policy"
+            >
+              What is the check-in/check-out policy
+              <Icon
+                class="hs-accordion-active:hidden block flex-shrink-0 text-gray-600 group-hover:text-gray-500 text-2xl"
+                name="mdi:chevron-down"
+              />
+              <Icon
+                class="hs-accordion-active:block hidden flex-shrink-0 text-gray-600 group-hover:text-gray-500 text-2xl"
+                name="mdi:chevron-up"
+              />
+            </button>
+            <div
+              id="checkin-policy"
+              class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+              aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-two"
+            >
+              <p class="text-gray-600">
+                The check in start from 14:00PM and the check out is until
+                12:00PM
+              </p>
+            </div>
+          </div>
+
+          <!-- Qs5 -->
+          <div class="hs-accordion pt-6 pb-3">
+            <button
+              class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500"
+              aria-controls="checkin-policy"
+            >
+              Are pets allowed?
+              <Icon
+                class="hs-accordion-active:hidden block flex-shrink-0 text-gray-600 group-hover:text-gray-500 text-2xl"
+                name="mdi:chevron-down"
+              />
+              <Icon
+                class="hs-accordion-active:block hidden flex-shrink-0 text-gray-600 group-hover:text-gray-500 text-2xl"
+                name="mdi:chevron-up"
+              />
+            </button>
+            <div
+              id="checkin-policy"
+              class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+              aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-two"
+            >
+              <p class="text-gray-600">
+                Sorry, we are not allowing any pets in the property
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- End Accordion -->
+      </div>
+      <!-- End Col -->
+    </div>
+    <!-- End Grid -->
+  </div>
+  <!-- End FAQ -->
+</section>

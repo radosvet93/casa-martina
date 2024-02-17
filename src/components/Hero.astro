@@ -1,3 +1,7 @@
+---
+import { PHONE } from "../constants/index.astro";
+---
+
 <section
   class="relative bg-[url(./tuscany-hill.jpg)] bg-cover bg-center bg-no-repeat"
 >
@@ -25,10 +29,10 @@
 
       <div class="mt-8 flex flex-wrap gap-4 text-center">
         <a
-          href="#"
+          href={`tel:${PHONE}`}
           class="block w-full rounded bg-green-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-green-700 focus:outline-none focus:ring active:bg-green-500 sm:w-auto"
         >
-          CONTACT US
+          {PHONE}
         </a>
       </div>
     </div>

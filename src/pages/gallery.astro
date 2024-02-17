@@ -1,13 +1,158 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
+import welcome from "../images/casa-martina-6.jpg";
+import balcony1 from "../images/casa-martina-34.jpg";
+import balcony2 from "../images/casa-martina-44.jpg";
+import balcony3 from "../images/casa-martina-41.jpg";
+import balcony4 from "../images/casa-martina-11.jpg";
+import balcony5 from "../images/casa-martina-36.jpg";
+import bathroom1 from "../images/casa-martina-21.jpg";
+import bathroom2 from "../images/casa-martina-33.jpg";
+import bathroom3 from "../images/casa-martina-38.jpg";
+import bathroom4 from "../images/casa-martina-37.jpg";
+import bathroom5 from "../images/casa-martina-17.jpg";
+import bedroomOne1 from "../images/casa-martina-32.jpg";
+import bedroomOne2 from "../images/casa-martina-22.jpg";
+import bedroomOne3 from "../images/casa-martina-14.jpg";
+import bedroomOne4 from "../images/casa-martina-24.jpg";
+import bedroomOne5 from "../images/casa-martina-26.jpg";
+import bedroomOne6 from "../images/casa-martina-29.jpg";
+import bedroomOne7 from "../images/casa-martina-9.jpg";
+import bedroomOne8 from "../images/casa-martina-1.jpg";
+import bedroomThree1 from "../images/casa-martina-5.jpg";
+import bedroomThree2 from "../images/casa-martina-3.jpg";
+import bedroomThree3 from "../images/casa-martina-4.jpg";
+import bedroomThree4 from "../images/casa-martina-2.jpg";
+import bedroomThree5 from "../images/casa-martina-8.jpg";
+import bedroomTwo1 from "../images/casa-martina-43.jpg";
+import bedroomTwo2 from "../images/casa-martina-7.jpg";
+import bedroomTwo3 from "../images/casa-martina-10.jpg";
+import bedroomTwo4 from "../images/casa-martina-12.jpg";
+import bedroomTwo5 from "../images/casa-martina-19.jpg";
+import bedroomTwo6 from "../images/casa-martina-18.jpg";
+import bedroomTwo7 from "../images/casa-martina-15.jpg";
+import bedroomTwo8 from "../images/casa-martina-28.jpg";
+import kitchen1 from "../images/casa-martina-31.jpg";
+import kitchen2 from "../images/casa-martina-25.jpg";
+import kitchen3 from "../images/casa-martina-20.jpg";
+import kitchen4 from "../images/casa-martina-42.jpg";
+import kitchen5 from "../images/casa-martina-13.jpg";
+import kitchen6 from "../images/casa-martina-30.jpg";
+import kitchen7 from "../images/casa-martina-16.jpg";
+import living1 from "../images/casa-martina-23.jpg";
+import living2 from "../images/casa-martina-27.jpg";
+import living3 from "../images/casa-martina-40.jpg";
+import living4 from "../images/casa-martina-39.jpg";
+import living5 from "../images/casa-martina-35.jpg";
 ---
 
 <Layout title="Gallery - Casa Martina">
   <main>
-    <section
-      class="mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:items-center lg:px-24 flex justify-center flex-col"
-    >
-      <h1 class="text-3xl font-extrabold sm:text-5xl mb-8">Gallery</h1>
+    <section class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-24">
+      <h1 class="text-3xl font-extrabold sm:text-5xl mb-8 text-center">
+        Gallery
+      </h1>
+
+      <Image class="w-full object-cover" src={welcome} alt="welcome" />
+
+      <!-- Bedroom 1 -->
+      <section class="my-20">
+        <h2 class="text-3xl font-bold mb-4">Bedroom 1</h2>
+
+        <div class="grid grid-cols-2 gap-4">
+          <Image class="w-full object-cover" src={bedroomOne1} alt="bedroomOne1" />
+          <Image class="w-full object-cover" src={bedroomOne2} alt="bedroomOne2" />
+          <Image class="w-full object-cover" src={bedroomOne3} alt="bedroomOne3" />
+          <Image class="w-full object-cover" src={bedroomOne4} alt="bedroomOne4" />
+          <Image class="w-full object-cover" src={bedroomOne5} alt="bedroomOne5" />
+          <Image class="w-full object-cover" src={bedroomOne6} alt="bedroomOne6" />
+          <Image class="w-full object-cover" src={bedroomOne7} alt="bedroomOne7" />
+          <Image class="w-full object-cover" src={bedroomOne8} alt="bedroomOne8" />
+        </div>
+      </section>
+
+      <!-- Bedroom 2 -->
+      <section class="my-20">
+        <h2 class="text-3xl font-bold mb-4">Bedroom 2</h2>
+        <div class="grid grid-cols-2 gap-4">
+          <Image class="w-full object-cover" src={bedroomTwo1} alt="bedroomTwo1" />
+          <Image class="w-full object-cover" src={bedroomTwo2} alt="bedroomTwo2" />
+          <Image class="w-full object-cover" src={bedroomTwo3} alt="bedroomTwo3" />
+          <Image class="w-full object-cover" src={bedroomTwo4} alt="bedroomTwo4" />
+          <Image class="w-full object-cover" src={bedroomTwo5} alt="bedroomTwo5" />
+          <Image class="w-full object-cover" src={bedroomTwo6} alt="bedroomTwo6" />
+          <Image class="w-full object-cover" src={bedroomTwo7} alt="bedroomTwo7" />
+          <Image class="w-full object-cover" src={bedroomTwo8} alt="bedroomTwo8" />
+        </div>
+      </section>
+
+      <!-- Bedroom 3 -->
+      <section class="my-20">
+        <h2 class="text-3xl font-bold mb-4">Bedroom 3</h2>
+        <div class="grid grid-cols-2 gap-4">
+
+          <Image class="w-full object-cover" src={bedroomThree1} alt="bedroomThree1" />
+          <Image class="w-full object-cover" src={bedroomThree2} alt="bedroomThree2" />
+          <Image class="w-full object-cover" src={bedroomThree3} alt="bedroomThree3" />
+          <Image class="w-full object-cover" src={bedroomThree4} alt="bedroomThree4" />
+          <Image class="w-full object-cover" src={bedroomThree5} alt="bedroomThree5" />
+        </div>
+      </section>
+
+      <!-- Bathroom -->
+      <section class="my-20">
+        <h2 class="text-3xl font-bold mb-4">Bathroom</h2>
+        <div class="grid grid-cols-2 gap-4">
+
+          <Image class="w-full object-cover" src={bathroom1} alt="bathroom1" />
+          <Image class="w-full object-cover" src={bathroom2} alt="bathroom2" />
+          <Image class="w-full object-cover" src={bathroom3} alt="bathroom3" />
+          <Image class="w-full object-cover" src={bathroom4} alt="bathroom4" />
+          <Image class="w-full object-cover" src={bathroom5} alt="bathroom5" />
+        </div>
+      </section>
+
+      <!-- Balcony -->
+      <section class="my-20">
+        <h2 class="text-3xl font-bold mb-4">Balcony</h2>
+        <div class="grid grid-cols-2 gap-4">
+
+          <Image class="w-full object-cover" src={balcony1} alt="balcony1" />
+          <Image class="w-full object-cover" src={balcony2} alt="balcony2" />
+          <Image class="w-full object-cover" src={balcony3} alt="balcony3" />
+          <Image class="w-full object-cover" src={balcony4} alt="balcony4" />
+          <Image class="w-full object-cover" src={balcony5} alt="balcony5" />
+        </div>
+      </section>
+
+      <!-- Kitchen and Dining -->
+      <section class="my-20">
+        <h2 class="text-3xl font-bold mb-4">Kitchen and Dining</h2>
+        <div class="grid grid-cols-2 gap-4">
+
+          <Image class="w-full object-cover" src={kitchen1} alt="kitchen1" />
+          <Image class="w-full object-cover" src={kitchen2} alt="kitchen2" />
+          <Image class="w-full object-cover" src={kitchen3} alt="kitchen3" />
+          <Image class="w-full object-cover" src={kitchen4} alt="kitchen4" />
+          <Image class="w-full object-cover" src={kitchen5} alt="kitchen5" />
+          <Image class="w-full object-cover" src={kitchen6} alt="kitchen6" />
+          <Image class="w-full object-cover" src={kitchen7} alt="kitchen7" />
+        </div>
+      </section>
+
+      <!-- Living Room -->
+      <section class="my-20">
+        <h2 class="text-3xl font-bold mb-4">Living Room</h2>
+        <div class="grid grid-cols-2 gap-4">
+
+          <Image class="w-full object-cover" src={living1} alt="living1" />
+          <Image class="w-full object-cover" src={living2} alt="living2" />
+          <Image class="w-full object-cover" src={living3} alt="living3" />
+          <Image class="w-full object-cover" src={living4} alt="living4" />
+          <Image class="w-full object-cover" src={living5} alt="living5" />
+        </div>
+      </section>      
     </section>
   </main>
 </Layout>
