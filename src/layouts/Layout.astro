@@ -5,7 +5,7 @@ interface Props {
   image?: string;
 }
 
-const { title, description = "Casa martina tuscany", image } = Astro.props;
+const { title, description = "Your perfect holiday home in Casa Martina Tuscany", image } = Astro.props;
 
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
@@ -15,12 +15,28 @@ import Footer from "../components/Footer.astro";
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- Site meta tags -->
+    <title>{title} - Casa Martina</title>
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <meta name="og:image" content={image} />
-    <title>{title} - Casa Martina</title>
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://casamartinatuscany.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content={`${title} - Casa Martina`}>
+    <meta property="og:description" content={description}>
+    <meta property="og:image" content="/og-image.jpg">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="casamartinatuscany.com">
+    <meta property="twitter:url" content="https://casamartinatuscany.com/">
+    <meta name="twitter:title" content={`${title} - Casa Martina`}>
+    <meta name="twitter:description" content={description}>
+    <meta name="twitter:image" content="/og-image.jpg">
   </head>
   <body class="min-h-screen">
     <Header />
